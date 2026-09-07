@@ -1,0 +1,11 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a sunrise over hills">
+  <rect width="400" height="300" fill="#F3ECDD"/>
+  <circle cx="200" cy="170" r="58" fill="#EFC9A0"/>
+  <g stroke="#C79A5B" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <line x1="200" y1="90" x2="200" y2="70"/>
+    <line x1="150" y1="108" x2="136" y2="94"/>
+    <line x1="250" y1="108" x2="264" y2="94"/>
+  </g>
+  <path d="M0 230 C60 200 110 240 160 214 C210 190 250 236 300 210 C340 190 380 220 400 206 L400 300 L0 300 Z" fill="#8FA07A" opacity="0.9"/>
+  <path d="M0 250 C70 228 130 258 190 236 C250 214 310 250 400 232 L400 300 L0 300 Z" fill="#7C8F68"/>
+</svg>

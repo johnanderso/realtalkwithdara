@@ -1,0 +1,6 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a winding path toward the horizon">
+  <rect width="400" height="300" fill="#F3ECDD"/>
+  <path d="M170 60 C220 120 150 150 210 200 C250 232 190 260 220 300 L180 300 C160 260 210 232 170 200 C120 150 190 120 150 60 Z" fill="#E6DDCE"/>
+  <circle cx="330" cy="70" r="20" fill="#EFC9A0"/>
+  <path d="M40 250 C110 230 160 260 220 244 C280 228 330 254 400 236 L400 300 L40 300 Z" fill="#8FA07A" opacity="0.9"/>
+</svg>

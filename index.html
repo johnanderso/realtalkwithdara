@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RealTalkWithDara — Words about life, faith, growth, and the beautiful in-between moments</title>
+<meta name="description" content="RealTalkWithDara — words about life, faith, growth, and the beautiful in-between moments, written by Dara.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/index.html" class="logo">
+      <img data-setting-src="logo" src="/images/logo.jpg" alt="RealTalkWithDara">
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="/index.html" aria-current="page">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/journals/index.html">Journals</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-copy">
+      <span class="eyebrow" data-setting="hero_eyebrow"></span>
+      <h1 data-setting="hero_heading">RealTalkWithDara</h1>
+      <p class="lede" data-setting="hero_lede">Words about life, faith, growth, and the beautiful in-between moments.</p>
+      <div class="hero-actions">
+        <a href="/journals/index.html" class="btn btn-primary">Read the journals</a>
+        <a href="/about.html" class="btn btn-outline">More about Dara</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="hero-photo-card">
+        <img data-setting-src="hero_image" src="/images/dara-portrait-white.jpg" alt="Portrait of Dara">
+      </div>
+      <img class="hero-sprig" src="/images/sprig.svg" alt="" aria-hidden="true">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Latest entries</span>
+        <h2>Recent from the journal</h2>
+      </div>
+      <a href="/journals/index.html" class="btn btn-outline btn-small">View all entries</a>
+    </div>
+    <div class="post-grid" id="recent-posts"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="about-teaser">
+      <div class="portrait">
+        <img data-setting-src="about_portrait" src="/images/dara-portrait-white.jpg" alt="Portrait of Dara">
+      </div>
+      <div>
+        <span class="eyebrow">Who&rsquo;s writing</span>
+        <h2>Hi, I&rsquo;m Dara.</h2>
+        <p></p>
+        <a href="/about.html" class="btn btn-primary btn-small">Read my story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <span class="eyebrow" style="color:#EFC9A0"></span>
+      <h2>Get new entries in your inbox</h2>
+      <p class="lede"></p>
+      <form class="cta-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="newsletter">
+        <input type="text" name="bot-field" style="display:none">
+        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p class="form-note">Handled by Netlify Forms — unsubscribe anytime.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="copyright">&copy; <span data-year></span> RealTalkWithDara. All words are Dara&rsquo;s own.</span>
+    <nav class="footer-links">
+      <a href="/about.html">About</a>
+      <a href="/journals/index.html">Journals</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+<script src="/js/render-home.js"></script>
+</body>
+</html>

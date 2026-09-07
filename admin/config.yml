@@ -1,0 +1,60 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "posts"
+    label: "Journal Entries"
+    description: "Every entry on the site lives here. Add, edit, or remove entries — changes go live within a minute or two of saving."
+    files:
+      - name: "posts"
+        label: "All Entries"
+        file: "content/posts.json"
+        fields:
+          - label: "Entries"
+            name: "posts"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.date}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "URL slug", name: "slug", widget: "string", hint: "Used in the web address — lowercase, hyphens instead of spaces, no punctuation (e.g. my-new-entry)." }
+              - { label: "Category", name: "category", widget: "select", options: ["Life", "Faith", "Growth", "In-Between"] }
+              - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD" }
+              - { label: "Cover image", name: "image", widget: "image", default: "/images/thumb-candle.svg", hint: "Shown on the homepage card and the entry page." }
+              - { label: "Excerpt", name: "excerpt", widget: "text", hint: "One or two sentences — shown on cards and previews." }
+              - label: "Body"
+                name: "content"
+                widget: "list"
+                summary: "{{fields.paragraph}}"
+                fields:
+                  - { label: "Paragraph", name: "paragraph", widget: "text" }
+
+  - name: "settings"
+    label: "Site Settings"
+    description: "Text and photos used across the homepage, about page, and contact page."
+    files:
+      - name: "settings"
+        label: "General Settings"
+        file: "content/settings.json"
+        fields:
+          - { label: "Logo", name: "logo", widget: "image", hint: "Shown top-left on every page." }
+          - { label: "Tagline", name: "tagline", widget: "string", required: false }
+
+          - { label: "Homepage — eyebrow text", name: "hero_eyebrow", widget: "string" }
+          - { label: "Homepage — heading", name: "hero_heading", widget: "string" }
+          - { label: "Homepage — intro text", name: "hero_lede", widget: "text" }
+          - { label: "Homepage — photo", name: "hero_image", widget: "image" }
+
+          - { label: "About page — first paragraph", name: "about_intro", widget: "text" }
+          - { label: "About page — second paragraph", name: "about_secondary", widget: "text" }
+          - { label: "About / homepage — portrait photo", name: "about_portrait", widget: "image" }
+
+          - { label: "Contact — email address", name: "contact_email", widget: "string" }
+          - { label: "Contact — response time note", name: "contact_response_time", widget: "string" }
+          - { label: "Instagram link", name: "instagram_url", widget: "string", required: false, hint: "Leave blank to hide the icon." }
+          - { label: "Threads link", name: "threads_url", widget: "string", required: false, hint: "Leave blank to hide the icon." }

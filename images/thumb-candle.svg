@@ -1,0 +1,8 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a lit candle">
+  <rect width="400" height="300" fill="#F3ECDD"/>
+  <path d="M192 200 C186 150 214 150 208 200 Z" fill="#EFE6D3"/>
+  <rect x="188" y="200" width="24" height="60" rx="4" fill="#B69D78"/>
+  <ellipse cx="200" cy="260" rx="46" ry="10" fill="#E6DDCE"/>
+  <path d="M200 150 C214 168 214 184 200 194 C186 184 186 168 200 150 Z" fill="#EFC9A0"/>
+  <path d="M200 160 C207 170 207 178 200 184 C193 178 193 170 200 160 Z" fill="#C79A5B"/>
+</svg>
